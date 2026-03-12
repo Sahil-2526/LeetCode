@@ -78,7 +78,7 @@ public:
         }
         int result=-1;
         int l=1;
-        int r=2e5;
+        int r=2e5;+
         while(l<=r){
             int mid=l+(r-l)/2;
             if(check(n,edges,k,mid)){
