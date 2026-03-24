@@ -51,4 +51,4 @@ int main() {
 
         cout << "\n";
     }
-} error
+} 
