@@ -1,0 +1,1 @@
+Select d.name as Department , e.name as Employee , e.salary as Salary From ( Select *, dense_rank() over (partition by departmentId Order by salary desc) as rnk from Employee) e Join Department d On e.departmentId=d.id Where rnk<4; 
