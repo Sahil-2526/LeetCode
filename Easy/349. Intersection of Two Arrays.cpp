@@ -18,3 +18,23 @@ public:
         return result;
     }
 };
+
+-------------------------------------------------------------------
+
+
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        set<int> res;
+        set<int> elem;
+        for(int x:nums1){
+            if(elem.find(x)==elem.end()) elem.insert(x);
+        }
+        for(int x:nums2){
+            if(elem.find(x)!=elem.end() ) res.insert(x);
+        }
+        vector<int> result;
+        for(int x:res) result.push_back(x);
+        return result;
+    }
+};

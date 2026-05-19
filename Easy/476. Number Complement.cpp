@@ -12,3 +12,4 @@ public:
         return (val-num)%mx;
     }
 };
+
